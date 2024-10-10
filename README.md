@@ -53,5 +53,7 @@ int main() {
     return 0;
 }
 ```
-#OUTPUT:
+## OUTPUT:
 ![Screenshot 2024-10-10 093042](https://github.com/user-attachments/assets/133f9b8e-8c77-43e7-82a4-32560d707cbb)
+## Result:
+This Program ie executed Sucessfully
