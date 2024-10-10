@@ -25,3 +25,33 @@ Step 7:
 End the program.
 
 PROGRAM :
+```
+#include <stdio.h>
+//Constants for LCG
+#define A 1664525
+#define C 1013904223
+#define M 4294967296 // 2^32
+
+//Linear Congruential Generator function
+unsigned int lcg(unsigned int seed) {
+    return (A * seed + C) % M;
+}
+
+int main() {
+    unsigned int seed;
+    int n, i;
+    printf("\n\n\n\n    *****Pseudorandom number generator*****\n\n\n\n");
+    printf("Enter the seed value: ");
+    scanf("%u", &seed);
+    printf("Enter how many random numbers to generate: ");
+    scanf("%d", &n);
+    printf("Random numbers:\n");
+    for (i = 0; i < n; i++) {
+        seed = lcg(seed);
+        printf("%u\n", seed);
+    }
+    return 0;
+}
+```
+#OUTPUT:
+![Screenshot 2024-10-10 093042](https://github.com/user-attachments/assets/133f9b8e-8c77-43e7-82a4-32560d707cbb)
